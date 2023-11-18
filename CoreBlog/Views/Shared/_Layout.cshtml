@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Weblog a Blogging Category Bootstrap responsive WebTemplate | Blog3 :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Weblog a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }</script>
+    <link href="~/web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="~/web/css/single.css">
+    <link href="~/web/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="~/web/css/fontawesome-all.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+          rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+
+    <header>
+        <div class="top-bar_sub_w3layouts container-fluid">
+            <div class="row">
+                <div class="col-md-4 logo text-left">
+                    <a class="navbar-brand" href="/Writer/Index/">
+                        CG
+                    </a>
+                </div>
+                <div class="col-md-4 top-forms text-center mt-lg-3 mt-md-1 mt-0">
+                    <span>Hoşgeldin _kullaniciadi</span>
+                    <span class="mx-lg-4 mx-md-2  mx-1">
+                        <a href="/Login/Index">
+                            <i class="fas fa-lock"></i> Giriş Yap
+                        </a>
+                    </span>
+                    <span>
+                        <a href="/Register/Index">
+                            <i class="far fa-user"></i> Üye Ol
+                        </a>
+                    </span>
+                </div>
+                <div class="col-md-4 log-icons text-right">
+
+                    <ul class="social_list1 mt-3">
+
+                       
+                        <li>
+                            <a href="#" class="twitter2">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_top" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler navbar-toggler-right mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Blog/Index">
+                                Anasayfa
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/About/Index">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Blog/Index">Bloglar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Contact/Index">İletişim</a>
+                        </li>
+
+                    </ul>
+                    <form action="#" method="post" class="form-inline my-2 my-lg-0 header-search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Aranacak Kelime..." name="Search" required="">
+                        <button class="btn btn1 my-2 my-sm-0" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+
+
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+  
+ @RenderBody();
+  
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+                    <h3>Hakkımda</h3>
+                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. lacinia eget consectetur sed, convallis at tellus..</p>
+                    <div class="read">
+                        <a href="/About/Index/" class="btn btn-primary read-m">Devamı</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+
+                    @await Component.InvokeAsync("BlogLast3Post")
+                    <!-- //subscribe -->
+                </div>
+                <!-- subscribe -->
+                <div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
+                    @await Html.PartialAsync("~/Views/Shared/SubscribeMail.cshtml")
+                    <!-- //subscribe -->
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="footer-cpy text-center">
+                <div class="footer-social">
+                    <div class="copyrighttop">
+                        <ul>
+                           
+                            <li>
+                                <a class="facebook" href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>Linkedin</span>
+                                </a>
+                            </li>
+                           
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="w3layouts-agile-copyrightbottom">
+                    <p>
+                        © @DateTime.Now.Year CemGöksu. All Rights Reserved
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- //footer -->
+
+
+        </div>
+    </footer>
+    <!---->
+    <!-- js -->
+    <script src="~/web/js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!--/ start-smoth-scrolling -->
+    <script src="~/web/js/move-top.js"></script>
+    <script src="~/web/js/easing.js"></script>
+    <script>jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });</script>
+    <!--// end-smoth-scrolling -->
+
+    <script>$(document).ready(function () {
+            /*
+                                    var defaults = {
+                                            containerID: 'toTop', // fading element id
+                                        containerHoverID: 'toTopHover', // fading element hover id
+                                        scrollSpeed: 1200,
+                                        easingType: 'linear'
+                                        };
+                                    */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });</script>
+    <a href="#home" class="scroll" id="toTop" style="display: block;">
+        <span id="toTopHover" style="opacity: 1;"> </span>
+    </a>
+
+    <!-- //Custom-JavaScript-File-Links -->
+    <script src="~/web/js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+

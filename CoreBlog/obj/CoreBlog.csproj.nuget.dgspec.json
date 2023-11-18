@@ -1,0 +1,311 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cemgoksu/Projects/CoreBlog/CoreBlog/CoreBlog.csproj": {}
+  },
+  "projects": {
+    "/Users/cemgoksu/Projects/CoreBlog/BusinessLayer/BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cemgoksu/Projects/CoreBlog/BusinessLayer/BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "/Users/cemgoksu/Projects/CoreBlog/BusinessLayer/BusinessLayer.csproj",
+        "packagesPath": "/Users/cemgoksu/.nuget/packages/",
+        "outputPath": "/Users/cemgoksu/Projects/CoreBlog/BusinessLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cemgoksu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/cemgoksu/Projects/CoreBlog/DataAccessLayer/DataAccessLayer.csproj": {
+                "projectPath": "/Users/cemgoksu/Projects/CoreBlog/DataAccessLayer/DataAccessLayer.csproj"
+              },
+              "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/EntityLayer.csproj": {
+                "projectPath": "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cemgoksu/Projects/CoreBlog/CoreBlog/CoreBlog.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cemgoksu/Projects/CoreBlog/CoreBlog/CoreBlog.csproj",
+        "projectName": "CoreBlog",
+        "projectPath": "/Users/cemgoksu/Projects/CoreBlog/CoreBlog/CoreBlog.csproj",
+        "packagesPath": "/Users/cemgoksu/.nuget/packages/",
+        "outputPath": "/Users/cemgoksu/Projects/CoreBlog/CoreBlog/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cemgoksu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.310/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/cemgoksu/Projects/CoreBlog/BusinessLayer/BusinessLayer.csproj": {
+                "projectPath": "/Users/cemgoksu/Projects/CoreBlog/BusinessLayer/BusinessLayer.csproj"
+              },
+              "/Users/cemgoksu/Projects/CoreBlog/DataAccessLayer/DataAccessLayer.csproj": {
+                "projectPath": "/Users/cemgoksu/Projects/CoreBlog/DataAccessLayer/DataAccessLayer.csproj"
+              },
+              "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/EntityLayer.csproj": {
+                "projectPath": "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cemgoksu/Projects/CoreBlog/DataAccessLayer/DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cemgoksu/Projects/CoreBlog/DataAccessLayer/DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "/Users/cemgoksu/Projects/CoreBlog/DataAccessLayer/DataAccessLayer.csproj",
+        "packagesPath": "/Users/cemgoksu/.nuget/packages/",
+        "outputPath": "/Users/cemgoksu/Projects/CoreBlog/DataAccessLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cemgoksu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/EntityLayer.csproj": {
+                "projectPath": "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/EntityLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/EntityLayer.csproj",
+        "projectName": "EntityLayer",
+        "projectPath": "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/EntityLayer.csproj",
+        "packagesPath": "/Users/cemgoksu/.nuget/packages/",
+        "outputPath": "/Users/cemgoksu/Projects/CoreBlog/EntityLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cemgoksu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

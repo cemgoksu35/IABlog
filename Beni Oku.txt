@@ -1,0 +1,16 @@
+﻿Migrations Code :
+
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            string connectionString = "server=localhost;database=CoreBlogDb;user id=sa;password=sa;multipleactiveresultsets=true;trustservercertificate=true;trusted_Connection=False";
+            optionsBuilder.UseSqlServer(connectionString);
+        }
+
+
+dotnet ef migrations add DbInitializationWithSeed
+
+
+dotnet ef migrations remove
+
+
+dotnet ef database update
